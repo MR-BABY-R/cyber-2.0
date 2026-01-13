@@ -1,0 +1,1113 @@
+what via va question and answer  well asked ? for above exp cy lab
+
+Here are important VIVA-VOCE questions and answers for your Cyber Security Lab – Password Cracking (Hashcat & John the Ripper) experiment. Learn these for exam.
+
+1. What is password hashing?
+
+Answer: Password hashing is the process of converting a password into a fixed-length encrypted string using a hash function like MD5 or SHA.
+
+2. What is a hash function?
+
+Answer: A hash function is a mathematical algorithm that converts plain text into a unique fixed-size hash value.
+
+3. What is MD5?
+
+Answer: MD5 is a message digest algorithm that produces a 128-bit hash value and is commonly used for password storage.
+
+4. Why is MD5 not secure today?
+
+Answer: MD5 is vulnerable to collision and brute-force attacks, so it is considered weak.
+
+5. What is Hashcat?
+
+Answer: Hashcat is a fast password cracking tool used to recover passwords from hashes using different attack modes.
+
+6. What is John the Ripper?
+
+Answer: John the Ripper is a password cracking tool used for dictionary, brute-force, and rule-based attacks.
+
+7. What is a dictionary attack?
+
+Answer: A dictionary attack tries passwords from a wordlist like rockyou.txt.
+
+8. What is rockyou.txt?
+
+Answer: It is a popular password wordlist used for cracking weak passwords.
+
+9. What is hash identification?
+
+Answer: The process of finding which algorithm generated the hash (MD5, SHA1, etc.).
+
+10. What is hashid tool?
+
+Answer: A tool used to identify the type of hash.
+
+11. What is the command to crack MD5 using Hashcat?
+
+Answer:
+hashcat -m 0 hash.txt rockyou.txt
+
+12. What does -m 0 mean?
+
+Answer: It specifies the hash type as MD5.
+
+13. What is brute force attack?
+
+Answer: Trying all possible character combinations to find the password.
+
+14. What is salting?
+
+Answer: Adding random data to a password before hashing to prevent rainbow table attacks.
+
+15. What are the modes of John the Ripper?
+
+Answer:
+
+Single mode
+
+Wordlist mode
+
+Incremental mode
+
+16. What is Single Crack Mode?
+
+Answer: It generates password variations from username and known words.
+
+17. What is Incremental Mode?
+
+Answer: It performs pure brute-force attack.
+
+18. What is the objective of this experiment?
+
+Answer: To understand password vulnerabilities and demonstrate how weak passwords can be cracked.
+
+19. What is the output of successful cracking?
+
+Answer: The original plaintext password.
+
+20. Why are strong passwords important?
+
+Answer: To protect against dictionary, brute-force, and rainbow table attacks.
+
+If you want, I can also give you XSS lab viva questions or DVWA viva questions in the same format for tomorrow’s exam.
+
+2.Cross-site Scripting.pdf
+PDF
+same as above
+
+Here are VIVA-VOCE Questions & Answers for your XSS (Cross Site Scripting) experiment in DVWA, same style as before.
+
+1. What is XSS?
+
+Answer: Cross Site Scripting is a web vulnerability where attacker injects malicious JavaScript into a web page.
+
+2. What are the types of XSS?
+
+Answer:
+
+Stored XSS
+
+Reflected XSS
+
+DOM-based XSS
+
+3. What is Stored XSS?
+
+Answer: The script is permanently stored in the database and executed whenever users visit the page.
+
+4. What is Reflected XSS?
+
+Answer: The script is reflected from server in the response and executed immediately.
+
+5. What is DOM-based XSS?
+
+Answer: The attack occurs in the browser by manipulating the DOM without server interaction.
+
+6. What is DVWA?
+
+Answer: Damn Vulnerable Web Application used for practicing web security attacks.
+
+7. What is the basic XSS payload?
+
+Answer:
+<script>alert(1)</script>
+
+8. What does alert(1) do?
+
+Answer: It displays a popup showing that JavaScript is executed.
+
+9. What is the objective of this experiment?
+
+Answer: To understand XSS attacks and their impact on web security.
+
+10. What is session hijacking in XSS?
+
+Answer: Stealing cookies using JavaScript like document.cookie.
+
+11. What is input validation?
+
+Answer: Checking user input to block malicious scripts.
+
+12. What is output encoding?
+
+Answer: Converting special characters into safe HTML entities.
+
+13. What is CSP?
+
+Answer: Content Security Policy used to restrict script execution.
+
+14. What is the difference between Stored and Reflected XSS?
+
+Answer: Stored is permanent, Reflected is temporary.
+
+15. Why is XSS dangerous?
+
+Answer: It can steal cookies, redirect users, and perform phishing.
+
+16. What is cookie theft payload?
+
+Answer:
+<script>alert(document.cookie)</script>
+
+17. What security levels exist in DVWA?
+
+Answer: Low, Medium, High, Impossible.
+
+18. How to prevent XSS?
+
+Answer: Input validation, output encoding, CSP, secure frameworks.
+
+19. What is DOM?
+
+Answer: Document Object Model representing HTML structure.
+
+20. What happens when XSS is successful?
+
+Answer: Malicious script runs in victim’s browser.
+
+Revise these and you’ll confidently answer Cyber Security Lab Viva.
+
+3.Insecure Direct Object Reference(IDOR).pdf
+PDF
+same 
+
+Here are VIVA-VOCE Questions & Answers for IDOR (Insecure Direct Object Reference) – same pattern as previous.
+
+1. What is IDOR?
+
+Answer: IDOR is a vulnerability where an attacker can access other users’ data by changing object IDs in URL or parameters.
+
+2. Full form of IDOR?
+
+Answer: Insecure Direct Object Reference.
+
+3. What is the objective of this experiment?
+
+Answer: To identify and exploit IDOR vulnerabilities and understand access control issues.
+
+4. What tools are used?
+
+Answer: Burp Suite, DVWA, and web browser.
+
+5. How does IDOR occur?
+
+Answer: When application does not check authorization for object access.
+
+6. Give an example of IDOR.
+
+Answer:
+Changing user_id=101 to user_id=102 in URL to view another user’s data.
+
+7. What is authorization bypass?
+
+Answer: Accessing restricted data without permission.
+
+8. What is Burp Suite used for?
+
+Answer: Intercepting and modifying HTTP requests.
+
+9. What is a parameter tampering?
+
+Answer: Modifying request parameters to gain unauthorized access.
+
+10. What is UID?
+
+Answer: Unique Identifier of a user or object.
+
+11. Why is IDOR dangerous?
+
+Answer: It exposes sensitive data like personal info and account details.
+
+12. What is RBAC?
+
+Answer: Role Based Access Control.
+
+13. What is UUID?
+
+Answer: Universally Unique Identifier used instead of simple IDs.
+
+14. How to prevent IDOR?
+
+Answer:
+
+Proper access control
+
+Use UUID
+
+Validate user ownership
+
+Server-side authorization
+
+15. What is authentication vs authorization?
+
+Answer:
+Authentication = who you are
+Authorization = what you can access
+
+16. What is DVWA?
+
+Answer: Damn Vulnerable Web Application.
+
+17. What is object reference?
+
+Answer: A pointer to database record like user ID, file ID.
+
+18. What is access control?
+
+Answer: Restricting users from unauthorized resources.
+
+19. What happens in low security level in DVWA?
+
+Answer: No access check is performed.
+
+20. What is the result of successful IDOR attack?
+
+Answer: Unauthorized data disclosure.
+
+Now you have Viva Q&A for:
+✔ Password Cracking
+✔ XSS
+✔ IDOR
+
+Say next and I’ll give for SQL Injection / CSRF / File Upload also.
+
+4.File Upload Vulnerabilities.pdf
+PDF
+same 
+
+Here are VIVA-VOCE Questions & Answers for File Upload Vulnerability (same style as before):
+
+1. What is File Upload Vulnerability?
+
+Answer: It is a security flaw where an attacker uploads malicious files to a server due to improper validation.
+
+2. What is the objective of this experiment?
+
+Answer: To understand the risks of insecure file upload and how attackers exploit it.
+
+3. What tools are used?
+
+Answer: DVWA and Burp Suite.
+
+4. What is a Web Shell?
+
+Answer: A malicious script that allows remote command execution on the server.
+
+5. Why is file type validation important?
+
+Answer: To prevent uploading executable scripts like PHP.
+
+6. What happens in Low Security level?
+
+Answer: Any file type can be uploaded without restriction.
+
+7. What is Content-Type manipulation?
+
+Answer: Changing MIME type to bypass file filters.
+
+8. What is MIME type?
+
+Answer: It tells the browser the file type (e.g., image/jpeg).
+
+9. What is Remote Code Execution (RCE)?
+
+Answer: Running attacker’s commands on the server.
+
+10. Why is .php file dangerous?
+
+Answer: It can execute server-side commands.
+
+11. What is Burp Repeater?
+
+Answer: A tool to modify and resend intercepted requests.
+
+12. What is file extension bypass?
+
+Answer: Renaming malicious files like shell.php.jpg.
+
+13. What is the impact of file upload attack?
+
+Answer: Server takeover, data theft, malware spread.
+
+14. How to prevent file upload vulnerability?
+
+Answer:
+
+Whitelist extensions
+
+Check MIME type
+
+Disable execution
+
+Store files outside web root
+
+15. What is DVWA?
+
+Answer: Damn Vulnerable Web Application for security practice.
+
+16. What is DoS in file upload?
+
+Answer: Uploading large files to crash server.
+
+17. What is secure file storage?
+
+Answer: Storing uploads in non-executable directories.
+
+18. What is Content-Disposition header?
+
+Answer: It defines file name and form data in HTTP.
+
+19. Why is High security level harder?
+
+Answer: It validates file extension and content.
+
+20. What is the final result of successful attack?
+
+Answer: Attacker gets command shell on server.
+
+Now you have viva ready for:
+
+✔ Password Cracking
+✔ XSS
+✔ IDOR
+✔ File Upload Vulnerability
+
+5.Command Injection.pdf
+PDF
+same
+
+Here are VIVA-VOCE Questions & Answers for Command Injection (same format):
+
+1. What is Command Injection?
+
+Answer: It is a vulnerability where an attacker executes system commands through a web application.
+
+2. What is the objective of this experiment?
+
+Answer: To understand how attackers inject and execute OS commands.
+
+3. What tools are used?
+
+Answer: DVWA and Burp Suite.
+
+4. What is OS Command Injection?
+
+Answer: Injecting operating system commands via user input.
+
+5. Give an example of command injection payload.
+
+Answer:
+127.0.0.1; ls
+127.0.0.1 && whoami
+
+6. What does ; or && do?
+
+Answer: They chain multiple commands.
+
+7. What is shell_exec()?
+
+Answer: A PHP function that executes system commands.
+
+8. What is the vulnerable input field in DVWA?
+
+Answer: IP address field used for ping.
+
+9. What is ping command?
+
+Answer: A network command to check host reachability.
+
+10. What is arbitrary command execution?
+
+Answer: Running any command chosen by attacker.
+
+11. What is privilege escalation?
+
+Answer: Gaining higher-level access than permitted.
+
+12. What happens in low security level?
+
+Answer: No input validation is applied.
+
+13. What is input sanitization?
+
+Answer: Removing dangerous characters from input.
+
+14. What is parameterized command?
+
+Answer: Commands executed safely without concatenation.
+
+15. What is the impact of command injection?
+
+Answer: Data theft, server takeover, system compromise.
+
+16. What is the difference between XSS and Command Injection?
+
+Answer: XSS runs in browser, Command Injection runs on server.
+
+17. What is escaping?
+
+Answer: Neutralizing special characters.
+
+18. What is least privilege principle?
+
+Answer: Giving minimum permissions to applications.
+
+19. What is mitigation for this attack?
+
+Answer: Input validation, whitelisting, secure APIs.
+
+20. What is the final result of successful attack?
+
+Answer: Attacker gains shell access on server.
+
+Now your viva coverage includes:
+
+✔ Password Cracking
+✔ XSS
+✔ IDOR
+✔ File Upload
+✔ Command Injection
+
+
+
+
+
+6.MITM attack.pdf
+PDF
+same
+
+Here are VIVA-VOCE Questions & Answers for Man-in-the-Middle (MITM) Attack – same style as before:
+
+1. What is a MITM attack?
+
+Answer: A Man-in-the-Middle attack is when an attacker secretly intercepts communication between two users.
+
+2. What is the objective of this experiment?
+
+Answer: To understand how network traffic can be intercepted and credentials captured.
+
+3. What tools are used?
+
+Answer: Wireshark and Ettercap.
+
+4. What is packet sniffing?
+
+Answer: Capturing and analyzing network packets.
+
+5. What is ARP poisoning?
+
+Answer: Sending fake ARP messages to redirect traffic to attacker.
+
+6. What is Wireshark?
+
+Answer: A network protocol analyzer used to capture packets.
+
+7. What is Ettercap?
+
+Answer: A tool for performing MITM attacks using ARP spoofing.
+
+8. What is a victim machine?
+
+Answer: The system whose data is intercepted.
+
+9. What is a gateway in MITM?
+
+Answer: Router through which traffic passes.
+
+10. What is HTTP POST?
+
+Answer: A method used to send login credentials.
+
+11. What is SSL stripping?
+
+Answer: Downgrading HTTPS to HTTP to capture data.
+
+12. What is DNS spoofing?
+
+Answer: Redirecting traffic to fake websites.
+
+13. What is session hijacking?
+
+Answer: Stealing session cookies to access user account.
+
+14. What is interception?
+
+Answer: Capturing data between sender and receiver.
+
+15. What is eavesdropping?
+
+Answer: Listening to private communication.
+
+16. What is credential sniffing?
+
+Answer: Capturing username and password.
+
+17. What is display filter in Wireshark?
+
+Answer: Used to filter packets like http.request.method == POST.
+
+18. What is unified sniffing?
+
+Answer: Monitoring all traffic on an interface.
+
+19. How to prevent MITM?
+
+Answer: Use HTTPS, VPN, encrypted Wi-Fi, certificate validation.
+
+20. What is the impact of MITM attack?
+
+Answer: Data theft, account compromise, message modification.
+
+Now you have full viva coverage for:
+
+✔ Password Cracking
+✔ XSS
+✔ IDOR
+✔ File Upload
+✔ Command Injection
+✔ MITM Attack
+
+Say same again and I’ll give SQL Injection viva.
+
+
+
+
+
+
+
+
+7.Privilege Escalation.pdf
+PDF
+same
+
+Here are VIVA-VOCE Questions & Answers for Privilege Escalation (same pattern):
+
+1. What is Privilege Escalation?
+
+Answer: It is the process of gaining higher access rights than intended, like user to admin/root.
+
+2. What is the objective of this experiment?
+
+Answer: To understand how attackers gain administrator/system privileges.
+
+3. What are the types of Privilege Escalation?
+
+Answer:
+
+Vertical
+
+Horizontal
+
+4. What is Vertical Privilege Escalation?
+
+Answer: Gaining higher-level privileges (user → admin/root).
+
+5. What is Horizontal Privilege Escalation?
+
+Answer: Accessing another user’s data with same privilege level.
+
+6. What tools are used?
+
+Answer: Metasploit, Kali Linux, Windows VM.
+
+7. What is Meterpreter?
+
+Answer: A powerful payload in Metasploit for post-exploitation.
+
+8. What is UAC bypass?
+
+Answer: Bypassing Windows User Account Control to get admin rights.
+
+9. What is SYSTEM privilege?
+
+Answer: Highest privilege in Windows OS.
+
+10. What is kernel exploit?
+
+Answer: Exploiting OS kernel vulnerability to gain root access.
+
+11. What is SUID?
+
+Answer: A Linux permission that allows execution as file owner.
+
+12. What is misconfigured sudo?
+
+Answer: Allowing users to run root commands without password.
+
+13. What is DLL hijacking?
+
+Answer: Loading malicious DLL to execute with higher privilege.
+
+14. What is token impersonation?
+
+Answer: Stealing another user’s access token.
+
+15. What is least privilege principle?
+
+Answer: Users should have minimum required permissions.
+
+16. What is privilege escalation impact?
+
+Answer: Full system compromise.
+
+17. What is Metasploit handler?
+
+Answer: Listener for reverse shell connections.
+
+18. What is getuid command?
+
+Answer: Shows current user privilege.
+
+19. How to prevent privilege escalation?
+
+Answer:
+
+Patch systems
+
+Strong permissions
+
+MFA
+
+Monitor logs
+
+20. What is the final result of successful escalation?
+
+Answer: Attacker becomes Administrator or Root.
+
+Now your Cyber Security Lab Viva is fully covered:
+
+✔ Password Cracking
+✔ XSS
+✔ IDOR
+✔ File Upload
+✔ Command Injection
+✔ MITM
+✔ Privilege Escalation
+
+Say same again if you want SQL Injection or CSRF viva too.
+
+
+
+
+
+
+9. XML External Entity(XXE) Injection.pdf
+PDF
+same
+
+Here are VIVA-VOCE Questions & Answers for XML External Entity (XXE) Injection – same pattern as before:
+
+1. What is XXE?
+
+Answer: XXE is a vulnerability where an attacker exploits XML parser to read internal files or perform SSRF.
+
+2. Full form of XXE?
+
+Answer: XML External Entity.
+
+3. What is the objective of this experiment?
+
+Answer: To understand how XML parsers can be exploited to access server files.
+
+4. What tools are used?
+
+Answer: Burp Suite and a vulnerable XML-based web application.
+
+5. What is an external entity?
+
+Answer: A reference in XML that loads data from external sources.
+
+6. Give an example of XXE payload.
+
+Answer:
+
+<!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
+
+7. What does &xxe; do?
+
+Answer: It fetches and displays the content of the external file.
+
+8. What file is commonly accessed in Linux XXE?
+
+Answer: /etc/passwd
+
+9. What is SSRF in XXE?
+
+Answer: Server Side Request Forgery using XML entities.
+
+10. What is Blind XXE?
+
+Answer: XXE where data is sent to attacker server instead of being displayed.
+
+11. What is Burp Repeater?
+
+Answer: Tool to modify and resend intercepted requests.
+
+12. What is DOCTYPE in XML?
+
+Answer: It defines document type and external entities.
+
+13. Why is XXE dangerous?
+
+Answer: It can read files, perform SSRF, and cause DoS.
+
+14. What is XML parser?
+
+Answer: A program that processes XML data.
+
+15. What security level allows easy XXE?
+
+Answer: Low security level or misconfigured parser.
+
+16. What is entity expansion attack?
+
+Answer: Causing DoS by large recursive entities.
+
+17. How to prevent XXE?
+
+Answer: Disable external entities and use secure XML parsers.
+
+18. What is defusedxml?
+
+Answer: A secure XML parsing library.
+
+19. What is WAF?
+
+Answer: Web Application Firewall.
+
+20. What is the result of successful XXE attack?
+
+Answer: Sensitive file disclosure or internal system access.
+
+Now your viva topics covered:
+
+✔ Password Cracking
+✔ XSS
+✔ IDOR
+✔ File Upload
+✔ Command Injection
+✔ MITM
+✔ Privilege Escalation
+✔ XXE Injection
+
+
+
+
+10.Session Hijacking and Fixation.pdf
+PDF
+same
+
+Here are VIVA-VOCE Questions & Answers for Session Hijacking and Session Fixation – same pattern:
+
+1. What is Session Hijacking?
+
+Answer: It is an attack where an attacker steals a valid session ID to impersonate a user.
+
+2. What is Session Fixation?
+
+Answer: It is an attack where attacker forces a known session ID on a victim.
+
+3. What is the objective of this experiment?
+
+Answer: To understand how attackers take control of user sessions.
+
+4. What tools are used?
+
+Answer: DVWA, Burp Suite, Browser.
+
+5. What is a Session ID?
+
+Answer: A unique token used to identify a logged-in user.
+
+6. Where is session ID stored?
+
+Answer: In cookies or URL.
+
+7. What is PHPSESSID?
+
+Answer: Default session cookie in PHP.
+
+8. What is Cookie?
+
+Answer: Small data stored in browser for session tracking.
+
+9. How does Session Hijacking occur?
+
+Answer: By stealing cookies using XSS, sniffing, or MITM.
+
+10. What is FoxyProxy?
+
+Answer: A browser proxy switcher for Burp Suite.
+
+11. What is Burp Intercept?
+
+Answer: Captures HTTP requests.
+
+12. What is Authorization Bypass?
+
+Answer: Accessing resources without proper permission.
+
+13. What is HTTPS role?
+
+Answer: Encrypts session data.
+
+14. What is Secure flag in cookie?
+
+Answer: Prevents cookie over HTTP.
+
+15. What is HttpOnly flag?
+
+Answer: Prevents JavaScript access to cookies.
+
+16. What is SameSite attribute?
+
+Answer: Prevents CSRF attacks.
+
+17. What is Session Timeout?
+
+Answer: Automatic session expiry.
+
+18. What is Impact of Session Hijacking?
+
+Answer: Account takeover.
+
+19. How to prevent Session Hijacking?
+
+Answer:
+
+HTTPS
+
+Secure cookies
+
+Regenerate session ID
+
+Logout properly
+
+20. What is final result of successful attack?
+
+Answer: Attacker logs in as victim without password.
+
+Now your full lab viva set includes:
+
+✔ Password Cracking
+✔ XSS
+✔ IDOR
+✔ File Upload
+✔ Command Injection
+✔ MITM
+✔ Privilege Escalation
+✔ XXE
+✔ Session Hijacking & Fixation
+
+
+
+
+
+11.Digital Forensics-Autopsy.pdf
+PDF
+same
+
+Here are VIVA-VOCE Questions & Answers for Digital Forensics using Autopsy – same pattern as earlier labs:
+
+1. What is Digital Forensics?
+
+Answer: Digital forensics is the process of collecting, preserving, analyzing, and presenting digital evidence.
+
+2. What is the objective of this experiment?
+
+Answer: To learn how to investigate digital evidence using forensic tools.
+
+3. What is Autopsy?
+
+Answer: Autopsy is an open-source digital forensics tool used to analyze disk images and recover data.
+
+4. What is FTK Imager?
+
+Answer: A tool used to create forensic images of storage devices.
+
+5. What is a Disk Image?
+
+Answer: An exact bit-by-bit copy of a storage device.
+
+6. What is Evidence Integrity?
+
+Answer: Ensuring evidence is not altered during investigation.
+
+7. What is Hash Value?
+
+Answer: A digital fingerprint used to verify file integrity.
+
+8. What is MD5 / SHA?
+
+Answer: Cryptographic hash algorithms.
+
+9. What is Ingest Module in Autopsy?
+
+Answer: A component that analyzes data for artifacts.
+
+10. What is File Carving?
+
+Answer: Recovering deleted files from unallocated space.
+
+11. What is Timeline Analysis?
+
+Answer: Viewing events based on time sequence.
+
+12. What is Metadata?
+
+Answer: Information about files like creation time and location.
+
+13. What is EXIF Data?
+
+Answer: Metadata stored in images.
+
+14. What is Keyword Search?
+
+Answer: Searching for specific words in disk data.
+
+15. What is Deleted File Recovery?
+
+Answer: Retrieving files removed from the system.
+
+16. What is Registry Analysis?
+
+Answer: Examining Windows registry for user activity.
+
+17. What is Chain of Custody?
+
+Answer: Documentation of evidence handling.
+
+18. What is Report Generation?
+
+Answer: Creating investigation report from findings.
+
+19. Why is Digital Forensics Important?
+
+Answer: To solve cyber crimes and support legal cases.
+
+20. What is the final outcome of the experiment?
+
+Answer: Extraction and analysis of digital evidence.
+
+Now your viva coverage includes:
+
+✔ Password Cracking
+✔ XSS
+✔ IDOR
+✔ File Upload
+✔ Command Injection
+✔ MITM
+✔ Privilege Escalation
+✔ XXE
+✔ Session Hijacking
+✔ Digital Forensics (Autopsy)
+
+
+
+
+
+12.Acquisition of Mobile Data.pdf
+PDF
+same
+
+Here are VIVA-VOCE Questions & Answers for Acquisition of Mobile Data using ADB – same pattern:
+
+1. What is Mobile Data Acquisition?
+
+Answer: It is the process of collecting data from mobile devices for analysis and investigation.
+
+2. What is the objective of this experiment?
+
+Answer: To learn how to extract data from an Android device using ADB.
+
+3. What is ADB?
+
+Answer: Android Debug Bridge is a command-line tool to communicate with Android devices.
+
+4. What is USB Debugging?
+
+Answer: A mode that allows ADB to access the Android system.
+
+5. Where is Developer Mode enabled?
+
+Answer: In Settings → About Phone → Tap Build Number 7 times.
+
+6. What is the command to check connected devices?
+
+Answer: adb devices
+
+7. What does "unauthorized" mean in adb devices?
+
+Answer: USB debugging permission is not granted on the phone.
+
+8. What is MTP mode?
+
+Answer: Media Transfer Protocol for file access.
+
+9. What is adb pull?
+
+Answer: Command used to copy files from mobile to PC.
+
+10. What directory stores photos?
+
+Answer: /sdcard/DCIM
+
+11. Command to copy photos?
+
+Answer: adb pull /sdcard/DCIM
+
+12. What is adb shell?
+
+Answer: It provides command-line access to Android OS.
+
+13. What is getprop?
+
+Answer: Displays device properties like model and OS version.
+
+14. What is SD card acquisition?
+
+Answer: Copying complete internal/external storage.
+
+15. What is wireless ADB?
+
+Answer: Connecting to device over Wi-Fi using IP.
+
+16. What port does ADB use?
+
+Answer: Port 5555.
+
+17. What is forensic importance of ADB?
+
+Answer: Helps extract evidence without modifying data.
+
+18. What is data integrity?
+
+Answer: Ensuring extracted data is not altered.
+
+19. What type of data can be acquired?
+
+Answer: Photos, videos, documents, logs, app data.
+
+20. What is the final result of the experiment?
+
+Answer: Successful extraction of mobile data to system.
